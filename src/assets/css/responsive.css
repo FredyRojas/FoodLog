@@ -1,0 +1,402 @@
+/* Responsive */
+@media (max-width: 1366px){
+  .register_buttom_users img{
+    max-width: 80px !important;
+  }
+  .register_options h2{
+    margin:0;
+  }
+}
+@media (max-width: 1024px){
+  .register_buttom_users img{
+    max-width: 100px !important;
+  }
+  .restaurant_item img, .menu_restaurant_item img, .your_order_item img, .details_item img, .user_restaurant_order_item img{
+    max-width:100px;
+    max-height:100px;
+  }
+  .register_buttom_users img{
+    max-width:120px;
+  }
+  html {
+    font-size: 0.9em;
+  }
+  h1 img{
+    width:200px;
+  }
+  .quantity_item img{
+    width:30%;
+    height:auto;
+  }
+  input{
+    margin: 4.5% auto;
+  }
+  .check {
+      height: 20px;
+      width: 20px;
+  }
+  .checkbox .check:after {
+    left: 6px;
+    top: 3px;
+  }
+  .slider{
+    width:75%;
+  }
+  .pop_up_buttons{
+    width:85%;
+  }
+  #popupBody{
+    width:60%;
+  }
+  .your_order, .order_details, .confirm_order, .user_data, .order_user_data, .user_order_restaurant{
+    width:60%;
+  }
+  .photo_user_order_list, .driver_order_list, .photo_restaurant{
+    max-width:100px;
+    max-height:100px;
+  }
+  .plate_order h3{
+    margin:0;
+  }
+  .quantity{
+    height:50px;
+  }
+  .map_track{
+    height:auto;
+    margin: 20px auto 0;
+  }
+}
+ @media (max-width:850px) and (orientation: landscape){
+    html {
+      font-size: 0.8em;
+    }
+    .p{
+      max-width:150px;
+    }
+    .container{
+      height:135vh;
+    }
+    .register_options{
+      height: 85vh;
+    }
+    .register_buttom_users img{
+      width:35%;
+    }
+     h1 img{
+      width:150px;
+    }
+    .hi_header{
+      height:20vh;
+    }
+    .user_bar{
+      height:40vh;
+    }
+    .photo_user, .photo_restaurant{
+      width:100px;
+      height:100px;
+    }
+    .photo_user img, .photo_restaurant img{
+      width:100%;
+      height:auto;
+    }
+    .tag-wrap{
+      top: calc(65vh - 50px);
+    }
+    .options_user{
+      height:50vh;
+    }
+    .slider{
+      width:90%;
+    }
+    footer{
+      height:15vh;
+    }
+    .restaurant_item img, .menu_restaurant_item img, .your_order_item img, .details_item img{
+      max-width:80px;
+      max-height:80px;
+    }
+    .restaurant_info h3, .food_info h3, .your_driver_info h3{
+      padding-top:5px;
+    }
+    .restaurant_info h4, .food_info h4, .plate h4, .your_driver_info h4{
+      padding:0;
+    }
+    .your_order, .order_details, .confirm_order, .user_data, .your_driver, .order_user_data, .user_order_restaurant{
+      width:75%;
+    }
+    .estimate_delivery_time{
+      width:50%;
+    }
+    .map{
+      height:500px;
+    }
+    .progress_bar_delivery{
+      position:initial;
+      margin: 0 auto 20px;
+      background:#F2F2F2;
+    }
+    .wrapper{
+      background:none !important;
+    }
+    input{
+      width:100%;
+    }
+    #popupBody{
+      margin: 1% auto;
+    }
+    #popupBody h2{
+      margin: 30px auto 20px;
+    }
+    .map{
+      margin:30px auto 0;
+    }
+    .contact_data{
+      padding:10px;
+      margin:5px auto;
+      width: 80%;
+    }
+    .textinput{
+      margin:5px auto;
+    }
+    .send_user{
+      margin: 2% auto;
+    }
+    .options_ms{
+      width:25%;
+    }
+    .edit_disches{
+      flex-direction: column;
+    }
+    .edit_info_plate{
+      width:80%;
+      margin: 20px auto 0;
+    }
+    footer img{
+      margin:10px;
+    }
+    .register_restaurant_main{
+      height: 550px;
+    }
+  }
+  @media (max-width:768px) and (orientation: landscape){
+    .grid_restaurant, .grid_menu_restaurant, .grid_restaurant_orders{
+      grid-template-columns: 90%;
+    }
+    .restaurant_item img, .menu_restaurant_item img, .your_order_item img, .details_item img{
+      max-width:100px;
+      max-height:100px;
+    }
+    .list_menu, .confirm, .quantity_item, .chat_driver_button{
+      width:20%;
+    }
+    .options_ms{
+      width:30%;
+    }
+    .options_ms img{
+      width:25px;
+      height:25px;
+    }
+    #popupBody{
+      width:70%;
+    }
+    .map_track{
+      height:auto;
+      margin: 20px auto 0;
+    }
+    .register_restaurant_main{
+      height: 520px;
+    }
+  }
+  @media (max-width:768px) and (orientation: portrait){
+    input{
+      margin: 10% auto;
+    }
+    .login_header a{
+      max-width:80px;
+    }
+    .login_header img{
+      max-width:80px;
+    }
+    .login_header{
+      height:10vh;
+    }
+    .user_header{
+      height:10vh;
+    }
+    .user_header a{
+      max-width:80px;
+    }
+    .user_header img{
+      max-width:80px;
+    }
+    .form_login{
+      height:52vh;
+    }
+    .register_form{
+      margin: 6% auto;
+    }
+    .slider{
+      width:90%;
+    }
+    .search_menu, .search_restaurant{
+      margin: 5% auto;
+      width:90%;
+    }
+    .grid_menu{
+      grid-template-columns: 30% 30% 30%;
+    }
+    #popupBody{
+      width:90%;
+    }
+    .grid_restaurant, .grid_menu_restaurant, .grid_restaurant_orders{
+      grid-template-columns: 90%;
+    }
+    .restaurant_item img, .menu_restaurant_item img, .your_order_item img, .details_item img{
+      max-width:120px;
+      max-height:120px;
+    }
+    .list_menu, .confirm, .chat_driver_button{
+      width:20%;
+    }
+    .quantity_item{
+      width:40%;
+    }
+    .your_order, .order_details, .confirm_order, .user_data, .your_driver, .order_user_data, .user_order_restaurant{
+      width:75%;
+    }
+    .estimate_delivery_time{
+      width:50%;
+    }
+    .map{
+      height:500px;
+    }
+    .progress_bar_delivery{
+      position:initial;
+      margin: 0 auto 20px;
+      background:#F2F2F2;
+    }
+    .wrapper{
+      background:none !important;
+    }
+    .popupContent{
+      min-height: 40vh;
+      max-height: 80vh;
+    }
+    .edit_disches{
+      flex-direction: column;
+    }
+    .edit_info_plate{
+      width:80%;
+      margin: 20px auto 0;
+    }
+    footer img{
+      margin:10px;
+    }
+    .grid_drivers{
+      grid-template-columns: 75%;
+    }
+    .register_restaurant_main{
+      height: 880px !important;
+    }
+  }
+ @media (max-width:480px) and (orientation: portrait){
+   .p{
+     max-width:150px;
+   }
+   .register_options h2{
+     font-size:2em;
+   }
+   .register_buttom_users img {
+    width: 70%;
+  }
+   .register_buttom_users p{
+     font-size:1em;
+   }
+   .pace{
+     width: 200px;
+     height: 5px;
+   }
+   .pace .pace-progress{
+     max-width: 200px;
+   }
+   form{
+     width: 90%;
+   }
+   input{
+     margin: 10% auto;
+   }
+   html {
+     font-size: 0.7em;
+   }
+   .login_header h2{
+     font-size:1.8em;
+   }
+   .user_header h2{
+     font-size:1.8em;
+   }
+   .slider{
+     width:95%;
+   }
+   .grid_menu{
+     grid-template-columns: 45% 45%;
+   }
+   .restaurant_item img, .menu_restaurant_item img, .your_order_item img, .details_item img{
+     max-width:80px;
+     max-height:80px;
+   }
+   .your_order, .order_details, .confirm_order, .user_data, .your_driver{
+     width:90%;
+   }
+   .quantity{
+     height:35px;
+   }
+   .sub_total_order{
+     width:50%;
+     margin: 0 0 0 50%;
+   }
+   .confirm_buttom_submit{
+     width:200px;
+   }
+   .distance{
+     width:50%;
+     right:25%;
+   }
+   .estimate_delivery_time{
+     width:75%;
+     height:100px;
+   }
+   .photo_driver_track{
+     width:75px;
+     height:75px;
+   }
+   .options_ms{
+     width:30%;
+   }
+   .options_ms img{
+     width:20px;
+   }
+   .user_ms{
+     width:90%
+   }
+   .user_ms_resp{
+     width: 70%;
+   }
+   .form_edit_profile{
+     margin-top:25%;
+   }
+   .grid_drivers{
+     grid-template-columns: 90%;
+   }
+   .register_restaurant_main{
+     height: auto;
+    max-height: 720px;
+      min-height: 650px;
+   }
+ }
+ @media (max-width:350px) and (orientation: portrait){
+   .register_restaurant_main{
+     height: auto;
+    max-height: 500px;
+      min-height: 450px;
+   }
+ }

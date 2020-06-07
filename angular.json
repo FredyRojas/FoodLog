@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Angular-Delevery-FoodLog"
+    }
+  },
+  "defaultProject": "Angular-Delevery-FoodLog",
+  "cli": {
+    "analytics": "fdfc6f25-191c-4f22-bd1a-a371604419f4"
+  }
 }

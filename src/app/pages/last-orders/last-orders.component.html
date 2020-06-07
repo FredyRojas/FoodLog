@@ -1,0 +1,163 @@
+<div class="container_users">
+    <header class="hi_header">
+        <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="overlay">
+            <div>
+                <ul>
+                    <li><a href="edit_profile.html">EDIT YOUR PROFILE</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="restaurant.html">RESTAURANTS</a></li>
+                    <li><a href="last_orders.html">LAST ORDERS</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="hi.html"><img src="assets/img/logo_blanco.svg" alt=""></a>
+    </header>
+    <div class="menu_title">
+        <img src="assets/img/title_last_orders.svg" alt="">
+        <h2 class="menu_h2">LAST ORDERS</h2>
+    </div>
+    <form>
+        <input type="text" class="search_restaurant" name="search" placeholder="🔍 Search">
+    </form>
+    <div class="grid_menu_restaurant">
+        <div class="menu_restaurant_item">
+            <img src="assets/img/empenada_last.jpg" alt="Food One">
+            <div class="food_info">
+                <div class="plate">
+                    <h3>Empanadas</h3>
+                    <h4>$10</h4>
+                </div>
+                <div class="confirm">
+                    <a href="your_order.html"><img src="assets/img/button_confirm.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="menu_restaurant_item">
+            <img src="assets/img/burrito_last.jpg" alt="Food One">
+            <div class="food_info">
+                <div class="plate">
+                    <h3>Burrito</h3>
+                    <h4>$16</h4>
+                </div>
+                <div class="confirm">
+                    <img src="assets/img/button_confirm.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="menu_restaurant_item">
+            <img src="assets/img/saladchesse_last.jpg" alt="Food One">
+            <div class="food_info">
+                <div class="plate">
+                    <h3>Salad whit chesse</h3>
+                    <h4>$16</h4>
+                </div>
+                <div class="confirm">
+                    <img src="assets/img/button_confirm.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="menu_restaurant_item">
+            <img src="assets/img/tuna_last.jpg" alt="Food One">
+            <div class="food_info">
+                <div class="plate">
+                    <h3>Salad with tuna</h3>
+                    <h4>$16</h4>
+                </div>
+                <div class="confirm">
+                    <img src="assets/img/button_confirm.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="menu_restaurant_item">
+            <img src="assets/img/piadina_plate.jpg" alt="Food One">
+            <div class="food_info">
+                <div class="plate">
+                    <h3>Piadina</h3>
+                    <h4>$16</h4>
+                </div>
+                <div class="confirm">
+                    <img src="assets/img/button_confirm.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="menu_restaurant_item">
+            <img src="assets/img/prosciuttorito_plate.jpg" alt="Food One">
+            <div class="food_info">
+                <div class="plate">
+                    <h3>Prosciuttorito</h3>
+                    <h4>$28</h4>
+                </div>
+                <div class="confirm">
+                    <img src="assets/img/button_confirm.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer_user">
+        <div class="pop_up_buttons">
+            <a href="#popup_1"><img src="assets/img/button_search.svg" alt=""></a>
+            <a href="#popup_2"><img src="assets/img/button_info.svg" alt=""></a>
+            <a href="#popup_3"><img src="assets/img/button_contact.svg" alt=""></a>
+        </div>
+
+        <div id="popup_1" class="overlay">
+            <div id="popupBody">
+                <h2>Search</h2>
+                <a id="cerrar" href="#"><img src="assets/img/button_close.png"></a>
+                <div class="popupContent">
+                    <div class="search_popup">
+                        <form>
+                            <input type="text" name="search" placeholder="&#128269; Search">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="popup_2" class="overlay">
+            <div id="popupBody">
+                <h2>NEED HELP?</h2>
+                <a id="cerrar" href="#"><img src="assets/img/button_close.png"></a>
+                <div class="popupContent">
+                    <div class="chat">
+                        <div class="food_log_ms">
+                            <img src="assets/img/food_log.svg" alt="">
+                            <div class="text_msm">Hello, how can we help you?</div>
+                        </div>
+                        <div class="user_ms">
+                            <input type="text" name="user_ms" class="user_ms_resp" placeholder="Your message">
+                            <div class="options_ms">
+                                <img src="assets/img/button_camera.svg" alt="">
+                                <img src="assets/img/button_attach.svg" alt="">
+                                <img src="assets/img/button_send.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup_3" class="overlay">
+            <div id="popupBody">
+                <h2>CONTACT US</h2>
+                <a id="cerrar" href="#"><img src="assets/img/button_close.png"></a>
+                <div class="popupContent">
+                    <input type="text" name="user_name" class="contact_data" placeholder="Your Name">
+                    <input type="text" name="user_ms" class="contact_data" placeholder="Your Telephone">
+                    <input type="email" name="user_ms" class="contact_data" placeholder="Your e-mail">
+                    <div class="comment">
+                        <textarea class="textinput" placeholder="Comment"></textarea>
+                    </div>
+                    <input type="submit" value="SEND" class="send_user">
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

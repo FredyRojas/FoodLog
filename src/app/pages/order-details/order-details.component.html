@@ -1,0 +1,136 @@
+<div class="container_users">
+    <header class="hi_header">
+        <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="overlay">
+            <div>
+                <ul>
+                    <li><a href="edit_profile.html">EDIT YOUR PROFILE</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="restaurant.html">RESTAURANTS</a></li>
+                    <li><a href="last_orders.html">LAST ORDERS</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="hi.html"><img src="assets/img/logo_blanco.svg" alt=""></a>
+    </header>
+    <div class="menu_title">
+        <img src="assets/img/title_order_details.svg" alt="">
+        <h2 class="restaurant_h2">ORDER DETAILS</h2>
+    </div>
+    <div class="user_data">
+        <div class="user_data_item">
+            <span class="tag-wrap_order">
+            <div class="photo_user_order">
+              <img src="assets/img/user_order.jpg" alt="">
+            </div>
+          </span>
+            <p>User Name</p>
+        </div>
+        <div class="user_data_item">
+            <span class="ico_order">📧</span>
+            <p>e-mailuser@mail.com</p>
+        </div>
+        <div class="user_data_item">
+            <span class="ico_order">📱</span>
+            <p>61 123456789</p>
+        </div>
+        <div class="user_data_item">
+            <span class="ico_order">🚏</span>
+            <p>3 Phillip Law Street Canberra ACT 1234</p>
+        </div>
+    </div>
+    <!--<input type="submit" value="EDIT">-->
+    <a href="order_details.html" class="edit_buttom_submit">Edit</a>
+    <div class="order_details">
+        <div class="details_item">
+            <img src="assets/img/pizza_plate.jpg" alt="Food One">
+            <div class="details_quantity">1 Pizza</div>
+            <div class="details_cost">$22</div>
+        </div>
+        <div class="details_item">
+            <img src="assets/img/lasagna_plate.jpg" alt="Food One">
+            <div class="details_quantity">1 Lasagna</div>
+            <div class="details_cost">$16</div>
+        </div>
+    </div>
+    <div class="confirm_order">
+        <div class="sub_total_order">SUBTOTAL: $38</div>
+    </div>
+    <div class="map">
+        <div class="distance">
+            <img src="assets/img/icon_distance.svg" alt="Distance"> 1.8 km - $3
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44241.40246143334!2d151.14131136876225!3d-33.88733613676245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sS%C3%ADdney%20Nueva%20Gales%20del%20Sur%2C%20Australia!5e0!3m2!1ses!2sco!4v1587746239905!5m2!1ses!2sco"
+            width="100%" height="600px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="total_cost_order">
+        TOTAL: $ 41
+    </div>
+    <a href="payment.html" class="edit_buttom_submit">Pay</a>
+    <footer class="footer_user">
+        <div class="pop_up_buttons">
+            <a href="#popup_1"><img src="assets/img/button_search.svg" alt=""></a>
+            <a href="#popup_2"><img src="assets/img/button_info.svg" alt=""></a>
+            <a href="#popup_3"><img src="assets/img/button_contact.svg" alt=""></a>
+        </div>
+
+        <div id="popup_1" class="overlay">
+            <div id="popupBody">
+                <h2>Search</h2>
+                <a id="cerrar" href="#"><img src="assets/img/button_close.png"></a>
+                <div class="popupContent">
+                    <div class="search_popup">
+                        <form>
+                            <input type="text" name="search" placeholder="&#128269; Search">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="popup_2" class="overlay">
+            <div id="popupBody">
+                <h2>NEED HELP?</h2>
+                <a id="cerrar" href="#"><img src="assets/img/button_close.png"></a>
+                <div class="popupContent">
+                    <div class="chat">
+                        <div class="food_log_ms">
+                            <img src="assets/img/food_log.svg" alt="">
+                            <div class="text_msm">Hello, how can we help you?</div>
+                        </div>
+                        <div class="user_ms">
+                            <input type="text" name="user_ms" class="user_ms_resp" placeholder="Your message">
+                            <div class="options_ms">
+                                <img src="assets/img/button_camera.svg" alt="">
+                                <img src="assets/img/button_attach.svg" alt="">
+                                <img src="assets/img/button_send.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup_3" class="overlay">
+            <div id="popupBody">
+                <h2>CONTACT US</h2>
+                <a id="cerrar" href="#"><img src="assets/img/button_close.png"></a>
+                <div class="popupContent">
+                    <input type="text" name="user_name" class="contact_data" placeholder="Your Name">
+                    <input type="text" name="user_ms" class="contact_data" placeholder="Your Telephone">
+                    <input type="email" name="user_ms" class="contact_data" placeholder="Your e-mail">
+                    <div class="comment">
+                        <textarea class="textinput" placeholder="Comment"></textarea>
+                    </div>
+                    <input type="submit" value="SEND" class="send_user">
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

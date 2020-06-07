@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Lilita One';
+    src: url('../fonts/LilitaOne.woff2') format('woff2'),
+        url('../fonts/LilitaOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeosansLight';
+    src: url('../fonts/GeosansLight.woff2') format('woff2'),
+        url('../fonts/GeosansLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeosansLight';
+    src: url('../fonts/GeosansLight-Oblique.woff2') format('woff2'),
+        url('../fonts/GeosansLight-Oblique.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}

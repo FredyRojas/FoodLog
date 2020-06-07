@@ -1,0 +1,2042 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+a{
+  text-decoration:none;
+}
+.container{
+  position: absolute;
+  height:100vh;
+  width:100%;
+}
+.container_users{
+  position: absolute;
+  height:auto;
+  width:100%;
+}
+.container_error{
+  height:90vh;
+  width:100%;
+}
+header{
+  color: #101010;
+  height:40vh;
+  width:100%;
+  margin:0;
+  background-image: url("../img/background_header_landspace.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_header{
+  background:#FA9100;
+  width:100%;
+  height:15vh;
+  display:flex;
+  justify-content: space-between;
+}
+.login_header h2{
+  color:#ffffff;
+  font-family: 'Lilita One';
+  font-size:2em;
+  margin-left:5%;
+}
+.login_header a{
+  width:100%;
+  max-width:120px;
+  max-height:66.5px;
+  height:100%;;
+  margin-right:5%;
+}
+.login_header img{
+  width:100%;
+  max-width:120px;
+  max-height:66.5px;
+  height:100%;;
+  margin-right:5%;
+}
+
+.user_header{
+  background:#D10D0D;
+  width:100%;
+  height:15vh;
+  display:flex;
+  justify-content: space-between;
+}
+.user_header h2, .restaurant_header h2{
+  color:#ffffff;
+  font-family: 'Lilita One';
+  font-size:2em;
+  margin-left:5%;
+}
+.user_header a, .restaurant_header a{
+  width:100%;
+  max-width:120px;
+  max-height:66.5px;
+  height:100%;;
+  margin-right:5%;
+}
+.user_header img, .restaurant_header img{
+  width:100%;
+  max-width:120px;
+  max-height:66.5px;
+  height:100%;;
+  margin-right:5%;
+}
+.hi_header{
+  background:#D10D0D;
+  width:100%;
+  height:15vh;
+  display:flex;
+  justify-content: space-between;
+}
+.hi_header a{
+  width:100%;
+  max-width:120px;
+  max-height:66.5px;
+  height:100%;;
+  margin-right:5%;
+}
+.hi_header img{
+  width:100%;
+  max-width:120px;
+  max-height:66.5px;
+  height:100%;;
+  margin-right:5%;
+}
+.title{
+  position:absolute
+  top:10%;
+}
+h1 {
+  color:#ffffff;
+  margin:-40px auto 0;
+}
+h1 img{
+  width:250px;
+  height:auto;
+}
+.login_buttom{
+  background-color:#FA9100;
+  width:200px;
+  height:40px;
+	cursor:pointer;
+  font-family: 'Lilita One';
+	color:#ffffff;
+  text-align:center;
+	text-decoration:none;
+  border-radius:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:1.5em;
+  position:absolute;
+  top: calc(40vh - 20px);
+  margin-left:auto;
+  margin-right:auto;
+  left:0;
+  right:0;
+}
+.login_buttom:hover {
+	background-color:#D10D0D;
+}
+
+.register_options{
+  width:100%;
+  height:45vh;
+  border-radius:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.register_options h2{
+  font-family: 'GeosansLight';
+  text-align:center;
+  font-weight: normal;
+  color:#585858;
+  font-size: 2.5em;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.register_buttoms{
+  display:flex;
+  justify-content: space-around;
+  width:90%;
+  margin:0 auto;
+  height: auto;
+}
+.register_buttom_users{
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.register_buttom_users img{
+  width:100%;
+  max-width:150px;
+  height:auto;
+  display: block;
+  margin: 20px auto;
+}
+.register_buttom_users p{
+  font-family: 'GeosansLight';
+  text-align:center;
+  color:#585858;
+  font-size:1.5em;
+}
+.register_buttom_users a{
+  text-decoration: none;
+}
+.register_button{
+  background-color:#D10D0D;
+  width:200px;
+  height:40px;
+	cursor:pointer;
+  font-family: 'Lilita One';
+	color:#ffffff;
+  text-align:center;
+	text-decoration:none;
+  border-radius:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:1.5em;
+  position:absolute;
+  top: calc(70% - 20px);
+  margin-left:auto;
+  margin-right:auto;
+  left:0;
+  right:0;
+  z-index: 1;
+}
+.register_button:hover {
+  background-color:#09C932;
+
+}
+.register_button:active {
+	position:relative;
+	top:1px;
+}
+.pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  border: 0px;
+  height: 10px;
+	border-radius:5px;
+  overflow: hidden;
+}
+
+.pace .pace-progress {
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  max-width: 400px;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+.preloader{
+  width:100%;
+  height:100vh;
+  background:#FA9100;
+  overflow:hidden;
+  position:fixed;
+  z-index:1000;
+  display:block;
+}
+
+.p {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+	height:auto;
+	width:100%;
+	max-width:250px;
+}
+footer{
+  font-family: 'GeosansLight';
+  text-align:center;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:15vh;
+  color:#585858;
+}
+footer img{
+  width:30px;
+  height:30px;
+  margin:20px;
+  box-sizing:border-box;
+}
+footer p{
+  color:#ffffff;
+  position:absolute;
+  bottom:20px;
+}
+.login_footer{
+  color: #101010;
+  height:30vh;
+  width:100%;
+  margin:0;
+  background-image: url("../img/footer_login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom:0;
+  position:absolute;
+}
+.login_footer a{
+  color:#ffffff;
+}
+/* Login ////////////////////*/
+.login_main h3{
+  font-family: 'GeosansLight';
+  text-align:center;
+  color:#585858;
+}
+.form_login, .notification_register{
+  height:45vh;
+  width:100%;
+  margin:0 auto;
+}
+.form_login h2{
+  color:#FA9100;
+  text-align:center;
+  font-family: 'Lilita One';
+  font-size:1.8em;
+  margin:30px auto 10px;
+}
+form{
+  margin:auto;
+  width:60%;
+  max-width:700px;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+}
+::placeholder{
+  color:#585858;
+  font-family: 'GeosansLight';
+}
+input{
+  padding:15px;
+  box-sizing:border-box;
+  width:75%;
+  margin:4% auto;
+  font-size:1.3em;
+}
+input[type="text"], [type="password"], [type="tel"], [type="email"]{
+  border-bottom:1px solid #BDBDBD;
+  border-left:none;
+  border-right:none;
+  border-top:none;
+  background:none;
+  color: #09C932;
+  font-family: 'GeosansLight';
+  font-size:1.3em;
+}
+input[type=submit]{
+  background-color:#FA9100;
+  width:200px;
+  height:40px;
+	display:inline-block;
+	cursor:pointer;
+  font-family: 'Lilita One';
+	color:#ffffff;
+  text-align:center;
+	text-decoration:none;
+  border-radius:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:1.5em;
+  border:none;
+  padding:0;
+}
+input[type=submit]:hover {
+	background-color:#09C932;
+}
+input[type=submit]:active {
+	position:relative;
+	top:1px;
+}
+.login_buttom_submit{
+  background-color:#FA9100;
+  width:200px;
+  height:40px;
+	cursor:pointer;
+  font-family: 'Lilita One';
+	color:#ffffff;
+  text-align:center;
+	text-decoration:none;
+  border-radius:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:1.5em;
+  border:none;
+  padding:0;
+  margin: 4% auto 0;
+}
+.login_buttom_submit:hover {
+	background-color:#09C932;
+}
+.login_buttom_submit:active {
+	position:relative;
+	top:1px;
+}
+/* custom checkbox */
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.3em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'GeosansLight';
+    color:#585858;
+    margin: 3% auto;
+    box-sizing: border-box;
+}
+
+/* hide the browser's default checkbox */
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* create custom checkbox */
+.check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+/* on mouse-over, add border color */
+.checkbox:hover input ~ .check {
+    border: 2px solid #2489C5;
+}
+
+/* add background color when the checkbox is checked */
+.checkbox input:checked ~ .check {
+    background-color: #2489C5;
+    border:none;
+}
+
+/* create the checkmark and hide when not checked */
+.check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* show the checkmark when checked */
+.checkbox input:checked ~ .check:after {
+    display: block;
+}
+
+/* checkmark style */
+.checkbox .check:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.check_form{
+  width:5px;
+}
+.register_form, .edit_profile{
+  margin: 2% auto;
+}
+
+/*Menu hamburguesa+/////////////////////*/
+#nav-icon {
+  position: relative;
+  margin-left:5%;
+  width: 30px;
+  height: 40px;
+  z-index: 10;
+  /* Bring icon ontop of overlay */
+  cursor: pointer;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+#nav-icon span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon span:nth-child(2) {
+  top: 12px;
+}
+
+#nav-icon span:nth-child(3) {
+  top: 24px;
+}
+
+#nav-icon.animate-icon span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon.animate-icon span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon.animate-icon span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+
+#overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Overlay positioning */
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Want a left- or right sided navigation instead? Just play around with the width! */
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index:5;
+}
+
+#overlay div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#overlay ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+}
+#overlay ul li{
+  margin:5%;
+}
+#overlay ul li a{
+  color:#ffffff;
+  text-decoration:none;
+  font-family: 'GeosansLight';
+  font-size:2em;
+  margin:0;
+}
+#overlay ul li a:hover{
+  color:#FA9100;
+}
+
+.user_bar{
+  width:100%;
+  height:30vh;
+  background-image: url("../img/user_bar.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:#ffffff;
+  font-family: 'Lilita One';
+  font-size:2.5em;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  text-shadow:1px 1px 2px #000000;
+}
+.tag-wrap {
+  filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.3));
+  position:absolute;
+  top: calc(45vh - 75px);;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.photo_user{
+  width:150px;
+  height:150px;
+  background:#ffffff;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  color:#ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container_users h2{
+  text-align:center;
+  color:#D10D0D;
+  font-family: 'Lilita One';
+  margin:40px auto;
+}
+.container_users h3{
+  font-family: 'GeosansLight';
+  text-align:center;
+  font-weight: normal;
+  color:#585858;
+  font-size: 2em;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+.container_error h2{
+  text-align:center;
+  color:#D10D0D;
+  font-family: 'Lilita One';
+  margin:40px auto;
+  font-size:3.5em
+}
+.container_error h3{
+  font-family: 'GeosansLight';
+  text-align:center;
+  font-weight: normal;
+  color:#585858;
+  font-size:3em;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+.options_user, .options_restaurant{
+  width:90%;
+  height:30vh;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-around;
+}
+.option_user, .option_restaurant{
+  width:30%;
+  max-width:150px;
+  height:auto;
+}
+.option_user p{
+  font-family: 'GeosansLight';
+  text-align:center;
+  color:#D10D0D;
+  font-size:1.5em;
+}
+.option_user a{
+  text-decoration: none;
+}
+.footer_user{
+  background:#D10D0D;
+}
+ol{
+	list-style: none;
+}
+.slider{
+	width:50%;
+	position: relative;
+	height:auto;
+  margin:20px auto 70px;
+}
+.sliders{
+  padding:0;
+}
+.sliders li{
+	overflow:hidden;
+}
+.sliders li, ul{
+	width:100%;
+}
+.sliders li img{
+	width:70%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+}
+.sliders .caption{
+	position:absolute;
+	width: 100%;
+	height:auto;
+	top:0;
+	bottom:0;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-end;
+	align-items: flex-end;
+	color:#fff;
+	text-align:center;
+	z-index:1;
+}
+.sliders .caption h1{
+	width: 100%;
+	color:#585858;
+  font-size:1.5em;
+  font-family: 'GeosansLight';
+  text-align:center;
+  background: rgba(255,255,255, 0.7);
+}
+.sliders .caption p{
+  width: 100%;
+	color:#585858;
+  font-size:1.5em;
+  font-family: 'GeosansLight';
+  text-align:center;
+  background: rgba(255,255,255, 0.7);
+  bottom: 20px;
+}
+.tip{
+  width:65%;
+  height:auto;
+  background: rgba(255,255,255, 0.9);
+  display:flex;
+  position:absolute;
+  bottom:10px;
+  padding:10px;
+  box-sizing:border-box;
+  border-radius:5px;
+  text-align:center;
+  font-size:1.5em;
+  align-items: center;
+}
+.tip_product{
+  width:50%;
+  font-family: 'GeosansLight';
+  color:#585858;
+}
+.cost, .order_tip{
+  width:25%;
+  font-family: 'GeosansLight';
+  color:#585858;
+}
+.order_tip img{
+  width:100%;
+  max-width:40px;
+  height:auto;
+  border-radius:0px !important;
+}
+.paginacion{
+	position:absolute;
+	top:101%;
+	display:flex;
+	width:100%;
+	justify-content:center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  padding:0;
+}
+.paginacion li{
+	font-size:15px;
+	margin:2px 5px;
+	color:#858585;
+	cursor:pointer;
+}
+.left, .right{
+	position:absolute;
+	top:0;
+	height:100%;
+	display:flex;
+	align-items:center;
+	color:#D10D0D;
+	font-size:40px;
+	z-index:2;
+	cursor:pointer;
+}
+.left{
+	left:10px;
+}
+.right{
+	right:10px;
+}
+.pop_up_buttons{
+  display:flex;
+  width: 75%;
+  justify-content: space-around;
+}
+.pop_up_buttons img{
+  width:25px;
+  height:25px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index:300;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+#popupBody{
+    width: 46%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: 5% auto;
+    height: auto;
+}
+#popupBody h2{
+  text-align: center;
+  color: #585858;
+  font-family: 'Lilita One';
+  margin: 40px auto;
+}
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+}
+#cerrar img{
+  max-width:25px;
+  max-height:25px;
+}
+.popupContent{
+  height: 60vh;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.popupContent h3{
+  font-family: 'GeosansLight';
+  font-size:1.5em;
+  text-align:center;
+  color:#585858;
+  padding-top:30px;
+}
+.popupContent img{
+  max-width:200px !important;
+  width: 100% !important;
+  height:auto;
+}
+.chat{
+  width:90%;
+  min-height:40vh;
+  margin:0 auto;
+  position:relative;
+}
+.food_log_ms, .chat_driver_ms{
+  background:#F2F2F2;
+  height:40px;
+  border-radius:5px;
+  display:flex;
+  padding:0 10px;
+  justify-content:space-around;
+  align-items: center;
+}
+.food_log_ms img{
+  max-width:60px !important;
+  height:auto;
+  width: 100% !important;
+}
+.text_msm{
+  width:85%;
+  font-size:1.3em;
+  text-align:right;
+}
+.user_ms{
+  height:40px;
+  width:100%;
+  border-radius:5px;
+  display:flex;
+  padding:0 10px;
+  justify-content:space-around;
+  align-items: center;
+  border:solid 1px #585858;
+  position:absolute;
+  bottom:0;
+}
+.user_ms_resp{
+  border-bottom:none !important;
+}
+.options_ms{
+  width:20%;
+  height:30px;
+  display: flex;
+  justify-content: space-between;
+}
+.options_ms img{
+  width:100%;
+  height:100%;
+  margin:0;
+  max-width: 30px !important;
+
+}
+.comment{
+  width:75%;
+  margin: 0 auto;
+}
+.contact_data{
+  border:1px solid #707070 !important;
+  border-radius:5px;
+  margin: 10px auto;
+}
+.textinput {
+  width:100%;
+  border:1px solid #707070;
+  border-radius:5px;
+  margin: 10px auto;
+  min-height:100px;
+  padding:10px;
+  box-sizing:border-box;
+}
+.send_user{
+  background:#D10D0D !important;
+}
+.send_user:hover {
+	background-color:#09C932 !important;}
+
+/* Form edit profile //////////////////*/
+.form_edit_profile {
+  margin-top:6%;
+}
+.change_photo{
+  z-index:1000;
+  position:absolute;
+  margin: 70px 0 0 100px;
+}
+
+.safe_buttom_submit{
+  background-color:#D10D0D;
+  width:200px;
+  height:40px;
+	cursor:pointer;
+  font-family: 'Lilita One';
+	color:#ffffff;
+  text-align:center;
+	text-decoration:none;
+  border-radius:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:1.5em;
+  border:none;
+  padding:0;
+  margin: 4% auto;
+}
+.safe_buttom_submit:hover {
+	background-color:#09C932;
+}
+.safe_buttom_submit:active {
+	position:relative;
+	top:1px;
+}
+.change_ok{
+  font-family: 'Lilita One';
+  font-size:2em;
+  text-align:center;
+  color:#D10D0D;
+  margin:40px auto;
+}
+/* Sections user //////////////////*/
+.menu_title{
+  width:50%;
+  height:70px;
+  margin:0 auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.menu_title img{
+  max-width:40px;
+  height:auto;
+  margin:0 10px 0 0;
+}
+.menu_h2, .restaurant_h2{
+  margin:0  !important;
+  color:#585858 !important;
+  font-family: 'GeosansLight' !important;
+  font-size:2em;
+  font-weight:normal;
+}
+.search_menu, .search_restaurant{
+  border:1px solid #BDBDBD !important;
+  border-radius:10px;
+}
+.grid_menu{
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  justify-content: space-around;
+  align-content: space-around;
+  width:90%;
+  margin:0 auto;
+  font-family: 'GeosansLight';
+  text-align:center;
+
+}
+.grid_menu img{
+  width:100%;
+  height:auto;
+  border-radius:10px 10px 0 0;
+  opacity:.7;
+  display:block;
+}
+.grid_menu img:hover{
+  opacity:1;
+}
+.types_food{
+  margin:5px auto 25px 0;
+  background:#000000;
+  border-radius:10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.types_food h4{
+  color:#585858;
+  background:#ffffff;
+  margin:0;
+  font-weight:normal;
+  padding: 10px 0;
+  box-sizing:border-box;
+}
+.restaurant_title{
+  width:50%;
+  height:100px;
+  margin:20px auto 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.restaurant_title img{
+  max-width:100px;
+  height:auto;
+  margin:0 10px 0 0;
+}
+.grid_restaurant, .grid_menu_restaurant, .grid_restaurant_orders, .grid_drivers{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: space-around;
+  align-content: space-around;
+  width:90%;
+  margin:0 auto;
+  font-family: 'GeosansLight';
+  text-align:center;
+}
+.restaurant_item, .menu_restaurant_item, .restaurant_order_item, .driver_options{
+  background:#F2F2F2;
+  border-radius:10px;
+  margin:5px 0 25px;
+  display:flex;
+  justify-content: space-around;
+  padding:5px 0;
+  box-sizing:border-box;
+  align-items: center;
+}
+.restaurant_item img, .menu_restaurant_item img, .your_order_item img, .details_item img, .user_restaurant_order_item img, .driver_options img{
+  width:100%;
+  height:100%;
+  max-width:160px;
+  max-height:160px;
+  height:auto;
+  background:white;
+  border-radius:5px;
+}
+.restaurant_info, .food_info, .your_driver_info, .order_info, .driver_info_restaurant, .restaurant_driver_info{
+  width:70%;
+  display:flex;
+}
+.restaurant_info h3, .food_info h3, .your_driver_info h3, .order_info h3, .driver_info_restaurant h3{
+  padding-top:10px;
+  text-align:left;
+  margin:3% 0;
+  color:#D10D0D;
+}
+.restaurant_info h4, .food_info h4, .plate h4, .your_driver_info h4, .order_info h4, .driver_info_restaurant h4, .restaurant_driver_info h4{
+  font-weight:normal;
+  color:#585858;
+  text-align:left;
+  font-size:1.5em;
+  margin:1% 0;
+  font-family: 'GeosansLight';
+  padding:10px 0;
+  box-sizing:border-box;
+}
+
+.restaurant, .plate, .driver, .plate_order{
+  width:75%;
+}
+.list_menu, .confirm, .quantity_item, .chat_driver_button{
+  width:25%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.list_menu img, .confirm img{
+  background:none;
+  border-radius:none;
+  width:75%;
+}
+.list_menu a, .confirm a{
+  width:100%;
+}
+.your_order, .order_details{
+  width:50%;
+  background:#F2F2F2;
+  border-radius:10px;
+  margin:10px auto;
+}
+.your_order_item, .details_item{
+  display:flex;
+  justify-content:space-between;
+  padding: 5px;
+  box-sizing:border-box;
+  width:100%;
+}
+.quantity_item{
+  justify-content:space-around;
+}
+.quantity_item img{
+  width:30px;
+  height:auto;
+  background:none;
+}
+.quantity{
+  width:40%;
+  height:60px;
+  background:#585858;
+  border-radius:5px;
+  color:#ffffff;
+  font-family: 'GeosansLight';
+  font-size:1.5em;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.confirm_order{
+  width: 50%;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+.sub_total_order{
+  width:30%;
+  height:60px;
+  background:#585858;
+  box-sizing:border-box;
+  margin: 0 0 0 70%;
+  border-radius:5px;
+  color:#ffffff;
+  font-family: 'GeosansLight';
+  font-size:1.5em;
+  padding:5px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.textinput_comments_order {
+  width:100%;
+  border:1px solid #BDBDBD;
+  border-radius:5px;
+  margin:40px auto;
+  min-height:100px;
+  padding:10px;
+  box-sizing:border-box;
+}
+.confirm_buttom_submit{
+  background-color:#D10D0D;
+  width:300px;
+  height:40px;
+	cursor:pointer;
+  font-family: 'Lilita One';
+	color:#ffffff;
+  text-align:center;
+	text-decoration:none;
+  border-radius:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:1.5em;
+  border:none;
+  padding:0;
+  margin: 4% auto;
+}
+.confirm_buttom_submit:hover {
+	background-color:#09C932;
+}
+.confirm_buttom_submit:active {
+	position:relative;
+	top:1px;
+}
+.user_data{
+  width:50%;
+  border:#BDBDBD solid 1px;
+  border-radius:10px;
+  margin:10px auto;
+}
+.user_data_item{
+  width:100%;
+  display: flex;
+  padding:10px;
+  box-sizing:border-box;
+  align-items: center;
+}
+.user_data_item p{
+  padding-left:20px;
+  box-sizing:border-box;
+  font-family: 'GeosansLight';
+  font-size:1.5em;
+  margin:0;
+  color:#585858;
+
+}
+.tag-wrap_order, .tag-wrap_driver{
+  filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.3));
+}
+.photo_user_order{
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+.photo_user_order img{
+  width:100%;
+  height:auto;
+}
+.ico_order{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+}
+.edit_buttom_submit, .pay_botton, .pay_naw_button, .track_order{
+  background-color:#D10D0D;
+  width:200px;
+  height:40px;
+	cursor:pointer;
+  font-family: 'Lilita One';
+	color:#ffffff;
+  text-align:center;
+	text-decoration:none;
+  border-radius:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:1.5em;
+  border:none;
+  padding:0;
+  margin: 4% auto;
+}
+.edit_buttom_submit:hover, .pay_button:hover, .pay_naw_button:hover, .track_order:hover {
+	background-color:#09C932;
+}
+.edit_buttom_submit:active, .pay_button:active, .pay_naw_button:active, .track_order:active {
+	position:relative;
+	top:1px;
+}
+.details_quantity{
+    width:70%;
+    font-family: 'GeosansLight';
+    font-size:2em;
+    color:#D10D0D;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.details_cost{
+    width:20%;
+    font-family: 'GeosansLight';
+    font-size:1.5em;
+    color:#585858;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.map, .map_track{
+  width:100%;
+  height:500px;
+  margin:30px auto;
+  position:relative;
+}
+.distance{
+  width:30%;
+  max-width:200px;
+  height:60px;
+  background:#585858;
+  box-sizing:border-box;
+  border-radius:5px;
+  color:#ffffff;
+  font-family: 'GeosansLight';
+  font-size:1.5em;
+  padding:5px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  position:absolute;
+  right:5%;
+  bottom:5%;
+}
+.distance img{
+  width:40px;
+}
+.total_cost_order{
+  width:30%;
+  max-width:200px;
+  height:60px;
+  background:#585858;
+  box-sizing:border-box;
+  border-radius:5px;
+  color:#ffffff;
+  font-family: 'GeosansLight';
+  font-size:1.5em;
+  padding:5px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  margin:30px auto;
+}
+.payment{
+
+}
+.payment h3{
+  padding-top:0px !important;
+}
+.card_datas{
+  width:100%;
+  display:flex;
+  margin:0 auto;
+}
+.card_datas img{
+  max-width:30px;
+}
+.card_data{
+  border:1px solid #BDBDBD !important;
+  border-radius:10px;
+  width:30%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+}
+.pay_process{
+  height:30vh;
+  width:100%;
+  margin:0;
+  background-image: url("../img/footer_login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:30px auto 0;
+  color: #ffffff;
+  font-family: 'Lilita One';
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px #000000;
+}
+.estimate_delivery_time{
+  width:30%;
+  max-width:400px;
+  height:150px;
+  background:#585858;
+  box-sizing:border-box;
+  border-radius:5px;
+  color:#ffffff;
+  font-family: 'GeosansLight';
+  font-size:1.5em;
+  padding:5px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  margin:30px auto;
+  flex-direction:column;
+}
+.estimate_delivery_time h5{
+  padding-top:0px;
+  color:#ffffff;
+  margin:0 auto;
+  font-size: 1em;
+  font-weight: normal;
+}
+.estimate_delivery_time h4{
+  margin:0 auto;
+  font-size:2em;
+  font-weight: normal;
+}
+.your_driver{
+  background:#F2F2F2;
+  border-radius:10px;
+  margin:5px 0 25px;
+  display:flex;
+  justify-content: space-around;
+  padding:5px 0;
+  box-sizing:border-box;
+  width:50%;
+  margin:0 auto;
+}
+.your_driver img{
+  width:25%;
+  height:auto;
+  background:white;
+  border-radius:5px;
+}
+.chat_driver_button img{
+  background:none;
+  border-radius:none;
+  width:75%;
+}
+.chat_driver_button a{
+  width:100%;
+}
+.progress_bar_delivery{
+  width:90%;
+  max-width:300px;
+  right:40px;
+  top:30px;
+  border-radius:10px;
+  padding:5px 0;
+  box-sizing:border-box;
+  position:absolute;
+}
+.photo_driver_track{
+  max-width: 150px;
+  max-height: 150px;
+  width:100%;
+  height:100%;
+  background: #ffffff;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+.photo_driver_track img{
+  width: 100%;
+  height: auto;
+  background:#ffffff;
+}
+.photo_driver_track_ms{
+  max-width: 35px;
+  max-height: 35px;
+  width:100%;
+  height:100%;
+  background: #ffffff;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+.photo_driver_track_ms img{
+  margin:0;
+}
+ .chat_driver_ms img{
+   max-width:30px;
+ }
+
+ /* Restaurant User****************/
+ .container_register_restaurant {
+    position: absolute;
+    height: auto;
+    width: 100%;}
+ .restaurant_header{
+   background:#FA9100;
+   width:100%;
+   height:15vh;
+   display:flex;
+   justify-content: space-between;
+ }
+ .hi_header_restaurant{
+   background:#FA9100;
+   width:100%;
+   height:15vh;
+   display:flex;
+   justify-content: space-between;
+ }
+ .hi_header_restaurant a{
+   width:100%;
+   max-width:120px;
+   max-height:66.5px;
+   height:100%;;
+   margin-right:5%;
+ }
+ .hi_header_restaurant img{
+   width:100%;
+   max-width:120px;
+   max-height:66.5px;
+   height:100%;;
+   margin-right:5%;
+ }
+ .register_restaurant_main{
+   height:700px;
+   margin: 20px auto;
+ }
+ .restauntant_register_footer{
+   color: #101010;
+   height:30vh;
+   width:100%;
+   margin:0;
+   background-image: url("../img/register_restaurant_footer.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   bottom:0;
+   position:absolute;
+ }
+ .restauntant_register_footer a{
+   color:#ffffff;
+ }
+ .tag-wrap_restaurant {
+   filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.3));
+   position:absolute;
+   top: calc(45vh - 75px);;
+   margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right: 0;
+ }
+ .photo_restaurant{
+   width:150px;
+   height:150px;
+   background:#ffffff;
+   color:#ffffff;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ .option_restaurant{
+   max-width:150px;
+   height:auto;
+ }
+ .option_restaurant p{
+   font-family: 'GeosansLight';
+   text-align:center;
+   color:#FA9100;
+   font-size:1.5em;
+ }
+ .restaurant_bar{
+   width:100%;
+   height:30vh;
+   background-image: url("../img/restaurant_bar.jpg");
+   background-repeat:no-repeat;
+   background-size:cover;
+   color:#ffffff;
+   font-family: 'Lilita One';
+   font-size:2.5em;
+   display:flex;
+   justify-content:center;
+   align-items: center;
+   text-shadow:1px 1px 2px #000000;
+ }
+ .footer_restaurant{
+   background:#FA9100;
+ }
+ /*suitch*/
+ .switch {
+   position: relative;
+   display: inline-block;
+   width: 60px;
+   height: 34px;
+   left: calc(50% - 30px);
+    right: 0;
+    margin-bottom:30px;
+ }
+
+ .switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+ }
+
+ .slider_switch {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #585858;
+   -webkit-transition: .4s;
+   transition: .4s;
+ }
+
+ .slider_switch:before {
+   position: absolute;
+   content: "";
+   height: 26px;
+   width: 26px;
+   left: 4px;
+   bottom: 4px;
+   background-color: white;
+   -webkit-transition: .4s;
+   transition: .4s;
+ }
+
+ input:checked + .slider_switch {
+   background-color: #FA9100;
+ }
+
+ input:focus + .slider_switch {
+   box-shadow: 0 0 1px #FA9100;
+ }
+
+ input:checked + .slider_switch:before {
+   -webkit-transform: translateX(26px);
+   -ms-transform: translateX(26px);
+   transform: translateX(26px);
+ }
+ /* Rounded sliders */
+ .slider_switch.round {
+   border-radius: 34px;
+ }
+
+ .slider_switch.round:before {
+   border-radius: 50%;
+ }
+
+ .back_button{
+   background:#FA9100;
+   width:30px;
+   height:30px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 20px;
+ }
+.back_button:hover {
+ 	background-color:#585858;
+ }
+ .restaurant_plate, .order_user{
+   width:75%;
+ }
+  .restaurant_plate h3, .order_user h3{
+    color:#FA9100;
+  }
+  .edit_plate{
+    width:25%;
+    display:flex;
+    align-items: center;
+  }
+  .edit{
+    width:70%;
+  }
+  .edit img{
+    background:none;
+    width:100%;
+  }
+  .order{
+    display:flex;
+    flex-direction:column;
+    color:#585858;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-size: 1.5em;
+    height:70%;
+  }
+  .edit_disches{
+    width:90%;
+    margin:30px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .edit_img_plate{
+    width:45%;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    height:100%;
+  }
+  .edit_img_plate img{
+    width:100%;
+    max-width:540px;
+    height:auto;
+    border-radius:15px;
+  }
+  .edit_info_plate{
+    width:45%;
+  }
+  .edit_info_plate H4{
+    color:#585858;
+    margin:0 auto;
+    font-family: 'GeosansLight';
+    font-weight:normal;
+    font-size:1.3em;
+    text-align:center;
+    width:90%;
+  }
+  .plate_data{
+    border: 1px solid #707070 !important;
+    border-radius: 5px;
+    margin: 10px 0 10px 5%;
+    width: 90%;
+  }
+  .description_plate{
+    width:90%;
+    margin:0 auto;
+  }
+  .save_buttom_submit{
+    background-color:#FA9100;
+    width:200px;
+    height:40px;
+  	cursor:pointer;
+    font-family: 'Lilita One';
+  	color:#ffffff;
+    text-align:center;
+  	text-decoration:none;
+    border-radius:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.5em;
+    border:none;
+    padding:0;
+    margin: 4% auto 0;
+  }
+  .save_buttom_submit:hover {
+  	background-color:#09C932;
+  }
+  .save_buttom_submit:active {
+  	position:relative;
+  	top:1px;
+  }
+  .change_photo_plate{
+    position:absolute;
+    right:10%;
+    bottom:15px;
+    width:100%;
+    height:100%;
+    max-width:40px;
+    max-height:40px;
+  }
+  .change_photo_plate img{
+      width:100%;
+      height:auto;
+  }
+  .grid_restaurant_orders{
+    margin:20px auto;
+  }
+  .photo_user_order_list, .driver_order_list{
+    width:100%;
+    height:auto;
+    max-width: 160px;
+    max-height: 160px;
+    background: #ffffff;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  }
+  .photo_user_order_list img, .driver_order_list img{
+    width:100%;
+    height:auto;
+  }
+  .manage_order, .confirm_driver{
+    width:25%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+  }
+  .manage_order_link, .manage_confirm_driver{
+    width: 100%;
+    height: auto;
+  }
+  .manage_order img, .confirm_driver img{
+    width:75%;
+    height:auto;
+    background:none;
+  }
+  .order_user_data{
+    width:50%;
+    border-radius:10px;
+    margin:10px auto;
+    background: #F2F2F2;
+    display:flex;
+    padding:10px;
+    box-sizing:border-box;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .number_user_hour{
+    width:80%;
+  }
+  .number_user_hour h3{
+    color: #FA9100;
+    padding-top: 5px;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight:normal;
+  }
+  .number_user_hour h4{
+    font-weight: normal;
+    color: #585858;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+    font-family: 'GeosansLight';
+    padding: 5px 0;
+    box-sizing: border-box;
+  }
+  .tag-wrap_order_details{
+    filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.3));
+    width: 15%;
+    display:flex;
+    justify-content:center;
+  }
+  .user_order_restaurant{
+   width:50%;
+   border-radius:20px;
+   margin:10px auto;
+ }
+ .user_restaurant_order_item{
+   display:flex;
+   justify-content:space-between;
+   padding: 5px;
+   box-sizing:border-box;
+   width:100%;
+   background: #F2F2F2;
+   margin: 5px auto;
+   border-radius:10px;
+ }
+ .food_order{
+   width: 75%;
+  display: flex;
+ }
+ .plate_order h3{
+  padding-top: 10px;
+  text-align: left;
+  margin: 3% 0;
+  color: #FA9100;
+ }
+.plate_order h4{
+  font-weight: normal;
+ color: #585858;
+ text-align: left;
+ font-size: 1.5em;
+ margin: 1% 0;
+ font-family: 'GeosansLight';
+ padding: 10px 0;
+ box-sizing: border-box;
+}
+.quantity_order{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.quantity_order h4{
+  font-family: 'GeosansLight';
+  text-align:center;
+  color:#585858;
+  font-size:1em;
+  font-weight:normal;
+  margin: 5px auto;
+}
+.sub_total_order_restaurant{
+  width:30%;
+  height:60px;
+  background:#585858;
+  box-sizing:border-box;
+  border-radius:5px;
+  color:#ffffff;
+  font-family: 'GeosansLight';
+  font-size:1.5em;
+  padding:5px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  margin:10px auto;
+}
+.delivery_location h3{
+ padding-top: 10px;
+ text-align: center;
+ margin:10px 0;
+ color: #FA9100;
+}
+.delivery_location h4{
+font-weight: normal;
+color: #585858;
+text-align: center;
+font-size: 1.5em;
+margin: 0;
+font-family: 'GeosansLight';
+padding: 5px 0;
+box-sizing: border-box;
+}
+.request_driver_buttom_submit{
+  background-color:#FA9100;
+  width:200px;
+  height:40px;
+  cursor:pointer;
+  font-family: 'Lilita One';
+  color:#ffffff;
+  text-align:center;
+  text-decoration:none;
+  border-radius:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:1.5em;
+  border:none;
+  padding:0;
+  margin: 20px auto 0;
+}
+.request_driver_buttom_submit:hover, .confirm_driver_buttom_submit:hover, .edit_user_order_button:hover, .track_order_restaurant:hover {
+  background-color:#09C932;
+}
+.request_driver_buttom_submit:active, .confirm_driver_buttom_submit:active, .edit_user_order_button:active, .track_order_restaurant:active {
+  position:relative;
+  top:1px;
+}
+.order_user p{
+  color:#FA9100;
+  text-align:left;
+}
+.confirm_driver_buttom_submit, .edit_user_order_button, .track_order_restaurant{
+  background-color:#FA9100;
+  width:200px;
+  height:40px;
+  cursor:pointer;
+  font-family: 'Lilita One';
+  color:#ffffff;
+  text-align:center;
+  text-decoration:none;
+  border-radius:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:1.5em;
+  border:none;
+  padding:0;
+  margin: 4% auto;
+}
+.restaurant_driver_info h3{
+  padding-top:10px;
+  text-align:left;
+  margin:3% 0;
+  color:#FA9100;
+}
+.number_user_hour_resume{
+  width:100%;
+  background:#F2F2F2;
+  border-radius:10px;
+}
+.number_user_hour_resume h3{
+  color: #FA9100;
+  padding-top: 5px;
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight:normal;
+}
+.number_user_hour_resume h4{
+  font-weight: normal;
+  color: #585858;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+  font-family: 'GeosansLight';
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+.safe_buttom_restaurant_submit{
+  background-color:#FA9100;
+  width:200px;
+  height:40px;
+	cursor:pointer;
+  font-family: 'Lilita One';
+	color:#ffffff;
+  text-align:center;
+	text-decoration:none;
+  border-radius:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:1.5em;
+  border:none;
+  padding:0;
+  margin: 4% auto;
+}
+.safe_buttom_restaurant_submit:hover {
+	background-color:#09C932;
+}
+.safe_buttom_restaurant_submit:active {
+	position:relative;
+	top:1px;
+}

@@ -1,0 +1,121 @@
+<div class="container_users">
+    <header class="hi_header">
+        <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="overlay">
+            <div>
+                <ul>
+                    <li><a href="edit_profile.html">EDIT YOUR PROFILE</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="restaurant.html">RESTAURANTS</a></li>
+                    <li><a href="last_orders.html">LAST ORDERS</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="hi.html"><img src="assets/img/logo_blanco.svg" alt=""></a>
+    </header>
+    <div class="menu_title">
+        <img src="assets/img/title_payment.svg" alt="">
+        <h2 class="restaurant_h2">PAYMENT</h2>
+    </div>
+    <div class="payment">
+        <h3>Enter your credit card details</h3>
+        <form>
+            <input type="text" placeholder="Cardholder Name" name="cardholder">
+            <input type="password" placeholder="Credit Card Number" name="credit_card_number">
+            <div class="card_datas">
+                <input type="text" class="card_data" name="date_card" placeholder="MM/YY">
+                <input type="text" class="card_data" name="cvc_card" placeholder="CVC"><img src="assets/img/button_cvc.svg">
+            </div>
+            <label class="checkbox">I agree with merchant's Terms
+            <input type="checkbox" class="check_form">
+            <span class="check"></span>
+            </label>
+            <label class="checkbox">Remember my card
+            <input type="checkbox" class="check_form">
+            <span class="check"></span>
+            </label>
+            <!--<input type="submit" value="EDIT">-->
+            <a href="#popup_confirm_pay" class="pay_naw_button">Pay Now</a>
+        </form>
+        <div class="pay_process">
+            Payment is under review
+        </div>
+    </div>
+    <footer class="footer_user">
+        <div class="pop_up_buttons">
+            <a href="#popup_1"><img src="assets/img/button_search.svg" alt=""></a>
+            <a href="#popup_2"><img src="assets/img/button_info.svg" alt=""></a>
+            <a href="#popup_3"><img src="assets/img/button_contact.svg" alt=""></a>
+        </div>
+
+        <div id="popup_1" class="overlay">
+            <div id="popupBody">
+                <h2>Search</h2>
+                <a id="cerrar" href="#"><img src="assets/img/button_close.png"></a>
+                <div class="popupContent">
+                    <div class="search_popup">
+                        <form>
+                            <input type="text" name="search" placeholder="&#128269; Search">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="popup_2" class="overlay">
+            <div id="popupBody">
+                <h2>NEED HELP?</h2>
+                <a id="cerrar" href="#"><img src="assets/img/button_close.png"></a>
+                <div class="popupContent">
+                    <div class="chat">
+                        <div class="food_log_ms">
+                            <img src="assets/img/food_log.svg" alt="">
+                            <div class="text_msm">Hello, how can we help you?</div>
+                        </div>
+                        <div class="user_ms">
+                            <input type="text" name="user_ms" class="user_ms_resp" placeholder="Your message">
+                            <div class="options_ms">
+                                <img src="assets/img/button_camera.svg" alt="">
+                                <img src="assets/img/button_attach.svg" alt="">
+                                <img src="assets/img/button_send.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup_3" class="overlay">
+            <div id="popupBody">
+                <h2>CONTACT US</h2>
+                <a id="cerrar" href="#"><img src="assets/img/button_close.png"></a>
+                <div class="popupContent">
+                    <input type="text" name="user_name" class="contact_data" placeholder="Your Name">
+                    <input type="text" name="user_ms" class="contact_data" placeholder="Your Telephone">
+                    <input type="email" name="user_ms" class="contact_data" placeholder="Your e-mail">
+                    <div class="comment">
+                        <textarea class="textinput" placeholder="Comment"></textarea>
+                    </div>
+                    <input type="submit" value="SEND" class="send_user">
+                </div>
+            </div>
+        </div>
+        <div id="popup_confirm_pay" class="overlay">
+            <div id="popupBody">
+                <h2>Thank you for your order</h2>
+                <a id="cerrar" href="#"><img src="assets/img/button_close.png"></a>
+                <div class="popupContent">
+                    <img src="assets/img/icon_thank.svg">
+                    <h3>You can track the delivery</h3>
+                    <a href="track_order.html" class="track_order">Track my Order</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
